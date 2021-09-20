@@ -9,18 +9,21 @@ const BreakingBad = () => {
     .then(data => setCharacters(data))
   }, [])
     return (
-        <div className="container">
-      {
-        characters.map(character => console.log(character))
-      }
-      {
-        
-        characters.map(character => <Char 
-            key={character.char_id} 
-            character={character}>
-          </Char>)
-      }
-    </div>
+        <div>
+          <h2>Total characters: {characters.length}</h2>
+          <div className="container">
+          {/*  {
+              characters.map(character => console.log(character))
+            } */}
+              {
+                
+                characters.map(character => <Char 
+                    key={character.char_id} 
+                    character={character}>
+                  </Char>)
+              }
+          </div>
+        </div>
     );
 };
 

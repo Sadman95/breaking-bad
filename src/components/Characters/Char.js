@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Char = (props) => {
-  // console.log(props.character);
+  console.log(props.character.portrayed);
     const {img, name, nickname, occupation} = props.character;
     const imageStyle = {
       width: "100%",
