@@ -10,9 +10,12 @@ const BreakingBad = () => {
   }, [])
     return (
         <div className="container">
+    {/*   {
+        characters.map(character => console.log(character))
+      } */}
       {
         
-        characters.map(character => <Char img={character.img} name={character.name} nickname={character.nickname}></Char>)
+        characters.map(character => <Char character={character}></Char>)
       }
     </div>
     );
